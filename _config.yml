@@ -118,13 +118,13 @@ index_with_subtitle: false
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.
 menu:
   home: / || home
-  #about: /about/ || user
+  categories: /categories/ || th
   #tags: /tags/ || tags
-  #categories: /categories/ || th
   archives: /archives/ || archive
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
+  about: /about/ || user
 
 # Enable/Disable menu icons / item badges.
 menu_settings:
@@ -262,8 +262,8 @@ excerpt_description: true
 # Automatically Excerpt. Not recommend.
 # Please use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
-  enable: false
-  length: 150
+  enable: true
+  length: 180
 
 # Post meta display settings
 post_meta:
@@ -323,8 +323,8 @@ related_posts:
 
 # Declare license on posts
 post_copyright:
-  enable: false
-  license: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a>
+  enable: true
+  license: <a href="https://creativecommons.org/licenses/by/4.0/" rel="external nofollow" target="_blank">CC BY 4.0</a>
 
 # Post edit
 # Dependencies: https://github.com/hexojs/hexo-deployer-git
@@ -433,12 +433,12 @@ font:
 
 # Math Equations Render Support
 math:
-  enable: false
+  enable: true
 
   # Default(true) will load mathjax/katex script on demand
   # That is it only render those page who has 'mathjax: true' in Front Matter.
   # If you set it to false, it will load mathjax/katex srcipt EVERY PAGE.
-  per_page: true
+  per_page: false
 
   engine: mathjax
   #engine: katex
